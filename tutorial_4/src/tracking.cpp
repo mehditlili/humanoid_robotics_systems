@@ -132,8 +132,8 @@ int main(int argc, char* argv[])
 {
     ros::init(argc, argv, "tutorial_4");
     ros::NodeHandle n;
-    //ros::Subscriber sub = n.subscribe("/nao_robot/camera/top/camera/image_raw", 1000, imageCB);
-    ros::Subscriber sub = n.subscribe("/camera/image_raw", 1000, imageCB);
+    ros::Subscriber sub = n.subscribe("/nao_robot/camera/top/camera/image_raw", 1000, imageCB);
+    //ros::Subscriber sub = n.subscribe("/camera/image_raw", 1000, imageCB);
 
     ROS_INFO("Node starting..");
     namedWindow("camera_image",1);
